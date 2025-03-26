@@ -1,0 +1,93 @@
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #F3F4F6;
+    color: #374151;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    text-align: center;
+    background-color: #2657a6;
+    color: white;
+    padding: 20px;
+}  
+h1{
+    margin: 0;
+    font-size: 2em;
+}
+p{
+    font-size: 1em;
+    margin-top: 10px;
+}
+.feedback-form{
+    background: white;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.feedback-form label{
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+} 
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    font-size: 1em;
+}  
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus{
+    outline: none;
+    border-color: #2657a6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+}  
+.feedback-form button{
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.feedback-form button:hover{
+    background-color: #2563EB;
+}
+footer{
+    text-align: center;
+    margin:30px;
+    color:black;
+}
+/* Star Rating */
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+    font-size: 2em;
+    text-align: center;
+}  
+.star-rating input {
+    display: none;
+} 
+.star-rating label {
+    color: #D1D5DB;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.star-rating input:checked ~ label {
+    color: #FBBF24;
+}
+.star-rating label:hover,.star-rating label:hover ~ label {
+    color: #F59E0B;
+}
+  

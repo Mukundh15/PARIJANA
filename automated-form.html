@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Form Filling - Parijana</title>
+  <link rel="stylesheet" href="automated-form.css">
+</head>
+<body>
+
+  <header>
+    <h1>Automated Form Filling</h1>
+    <p>Quickly fill out your insurance forms using saved data.</p>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form id="claimForm">
+        <h2>Claim Form</h2>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <label for="policy-number">Policy Number:</label>
+        <input type="text" id="policy-number" placeholder="Policy Number" required>
+
+        <label for="claim-amount">Claim Amount:</label>
+        <input type="number" id="claim-amount" placeholder="Enter Claim Amount" required>
+
+        <label for="claim-reason">Claim Reason:</label>
+        <textarea id="claim-reason" placeholder="Describe the reason for the claim" required></textarea>
+
+        <button type="submit">Submit Claim</button>
+      </form>
+
+      <!-- Optional: File Upload for OCR -->
+      <div class="ocr-container">
+        <h2>Upload Document for OCR</h2>
+        <input type="file" id="ocrFile" accept="image/*, .pdf">
+        <button type="button" onclick="extractText()">Extract Text</button>
+        <div class="ocr-result" id="ocrResult"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Parijana. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+  <script src="automated-form.js"></script>
+</body>
+</html>

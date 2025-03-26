@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - Parijana</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <!-- Access Restriction -->
+  <script>
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <h1>User Profile</h1>
+    <p>Manage your personal details and account settings.</p>
+  </header>
+
+  <main>
+    <div class="profile-container">
+      <form class="profile-form" id="profileForm">
+        <h2>Personal Information</h2>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="button" onclick="updateProfile()">Save Changes</button>
+      </form>
+
+      <form class="password-form" id="passwordForm">
+        <h2>Change Password</h2>
+
+        <label for="current-password">Current Password:</label>
+        <input type="password" id="current-password" name="current-password" required>
+
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password" name="new-password" required>
+
+        <label for="confirm-password">Confirm New Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <button type="button" onclick="changePassword()">Change Password</button>
+      </form>
+
+      <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Parijana. All rights reserved.</p>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

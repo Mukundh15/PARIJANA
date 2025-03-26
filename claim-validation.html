@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claim Validation - Parijana</title>
+  <link rel="stylesheet" href="claim-validation.css">
+</head>
+<body>
+
+  <header>
+    <h1>Claim Validation</h1>
+    <p>Check the status of your submitted claim.</p>
+  </header>
+
+  <main>
+    <div class="validation-container">
+      <form id="claimForm">
+        <h2>Enter Claim Details</h2>
+        
+        <label for="policy-number">Policy Number:</label>
+        <input type="text" id="policy-number" placeholder="Enter your policy number" required>
+
+        <label for="claim-amount">Claim Amount:</label>
+        <input type="number" id="claim-amount" placeholder="Enter claim amount" required>
+
+        <label for="claim-reason">Claim Reason:</label>
+        <textarea id="claim-reason" placeholder="Describe the reason for the claim" required></textarea>
+
+        <button type="button" onclick="validateClaim()">Validate Claim</button>
+      </form>
+
+      <div class="result-container" id="resultContainer">
+        <!-- Validation results will appear here -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Parijana. All rights reserved.</p>
+  </footer>
+
+  <script src="claim-validation.js"></script>
+</body>
+</html>

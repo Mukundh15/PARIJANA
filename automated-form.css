@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F4F6;
+    color: #374151;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #1E3A8A;
+    color: white;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h2 {
+    color: #1E3A8A;
+  }
+  
+  .form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .form-container input:focus,
+  .form-container textarea:focus {
+    outline: none;
+    border-color: #3B82F6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+  }
+  
+  button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2563EB;
+  }
+  
+  /* OCR Container */
+  .ocr-container {
+    margin-top: 30px;
+  }
+  
+  .ocr-result {
+    margin-top: 15px;
+    padding: 10px;
+    background: #F3F4F6;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #374151;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #E5E7EB;
+    padding: 10px;
+    color: #6B7280;
+    margin-top: auto;
+  }
+  
